@@ -27,7 +27,7 @@ class _HealthRecordsState extends State<HealthRecords> {
       'id': '1',
       'title': 'Blood Test Report',
       'type': 'lab_report',
-      'doctorName': 'Dr. Priya Sharma - Apollo Labs',
+      'doctorName': 'Manju Devi - Apollo Labs',
       'date': '28/08/2024',
       'imageUrl':
           'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=600&fit=crop',

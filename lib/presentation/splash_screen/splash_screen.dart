@@ -167,7 +167,7 @@ class _SplashScreenState extends State<SplashScreen>
 
                     // App name
                     Text(
-                      'HealthCare Plus',
+                      'CareLink',
                       style: AppTheme.lightTheme.textTheme.headlineMedium
                           ?.copyWith(
                         color: Colors.white,

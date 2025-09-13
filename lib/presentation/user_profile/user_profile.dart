@@ -28,13 +28,13 @@ class _UserProfileState extends State<UserProfile> {
 
   // Mock user data
   Map<String, dynamic> _profileData = {
-    'fullName': 'Dr. Priya Sharma',
+    'fullName': 'Manju Devi',
     'age': 32,
     'gender': 'Female',
     'bloodGroup': 'O+',
     'mobile': '+91 98765 43210',
     'profileImage':
-        'https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        'https://imgs.search.brave.com/iWiQrVwhoG6cpWdSSzYCkXH1Q_xuEEDpqD-d8wBfceU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTMx/NDM4MTg4MS9waG90/by9pbmRpYW4td29t/YW4tc2hvd2luZy1t/b2JpbGUtcGhvbmUu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PVdCbVFnTmFtcHE1/c2wxVUxpaHQ5Q256/NGNyWnoxMXMyX2xn/ekpXQWwwc1k9',
   };
 
   List<Map<String, dynamic>> _emergencyContacts = [
@@ -64,7 +64,7 @@ class _UserProfileState extends State<UserProfile> {
   Map<String, dynamic> _abhaData = {
     'isLinked': true,
     'abhaId': '12-3456-7890-1234',
-    'healthId': 'priya.sharma@abha',
+    'healthId': 'manju.devi@abha',
     'lastSync': '04 Sep 2025, 07:30 AM',
   };
 
@@ -326,7 +326,7 @@ class _UserProfileState extends State<UserProfile> {
                 setState(() {
                   _abhaData['isLinked'] = true;
                   _abhaData['abhaId'] = '12-3456-7890-1234';
-                  _abhaData['healthId'] = 'priya.sharma@abha';
+                  _abhaData['healthId'] = 'manju.devi@abha';
                   _abhaData['lastSync'] = 'Just now';
                 });
                 _showToast('ABHA ID linked successfully');

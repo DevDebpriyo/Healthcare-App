@@ -21,7 +21,7 @@ class _HomeDashboardState extends State<HomeDashboard> {
 
   // Mock user data
   final Map<String, dynamic> userData = {
-    "name": "Dr. Priya Sharma",
+    "name": "Manju Devi",
     "age": 34,
     "bloodGroup": "O+",
     "abhaId": "12-3456-7890-1234",

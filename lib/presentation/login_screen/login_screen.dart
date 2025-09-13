@@ -220,7 +220,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: Column(
                           children: [
                             Text(
-                              'Welcome to HealthCare Plus',
+                              'Welcome to CareLink',
                               style: AppTheme.lightTheme.textTheme.headlineSmall
                                   ?.copyWith(
                                 color:
