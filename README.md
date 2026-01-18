@@ -1,6 +1,18 @@
-# Flutter
+# CareLink
 
-A modern Flutter-based mobile application utilizing the latest mobile development technologies and tools for building responsive cross-platform applications.
+India's health companion — a single place for records, management, and care coordination.
+
+CareLink brings together Patient records, Hospital Management System and Doctor's Portal into one intuitive experience designed for all users across India.
+
+## Our Idea
+
+CareLink started with a simple observation: managing healthcare records of patients, hospital inventory, & staff records across multiple clinics, and changing providers is fragmented and stressful. Our mission is to simplify that journey by creating a unified, secure health ledger that lives with all the three - patients, doctors & hospitals — not behind multiple portals.
+
+
+## Quick Links
+
+- **App name:** Healthcare Plus
+- **Tagline:** Smart, Secure Health Management — Anywhere, Anytime
 
 ## 📋 Prerequisites
 
@@ -16,22 +28,36 @@ A modern Flutter-based mobile application utilizing the latest mobile developmen
 flutter pub get
 ```
 
-2. Run the application:
+2. Run the application in development:
 ```bash
 flutter run
 ```
 
-## 📁 Project Structure
+## **Index of Contexts**
+
+- **android:** Android-specific project and build configuration
+- **ios:** iOS project, CocoaPods and Xcode configuration
+- **lib:** Main Dart source code
+  - **core:** Core services and utilities (auth, storage, network)
+  - **presentation:** UI screens and widgets
+  - **routes:** App routing definitions and navigation
+  - **theme:** Theme and styling configuration
+  - **widgets:** Reusable UI components
+- **assets:** Images, fonts, and static assets
+- **build:** Generated build artifacts
+- **pubspec.yaml:** Dependency and asset configuration
+
+Refer to the project folders for detailed implementations and generated outputs.
+
+## 📁 Project Structure (overview)
 
 ```
-flutter_app/
-├── android/            # Android-specific configuration
-├── ios/                # iOS-specific configuration
-├── lib/
+healthcare_plus/
+├── android/            # Android configuration & Gradle files
+├── ios/                # iOS configuration & Xcode files
+├── lib/                # Dart source code
 │   ├── core/           # Core utilities and services
-│   │   └── utils/      # Utility classes
 │   ├── presentation/   # UI screens and widgets
-│   │   └── splash_screen/ # Splash screen implementation
 │   ├── routes/         # Application routing
 │   ├── theme/          # Theme configuration
 │   ├── widgets/        # Reusable UI components
@@ -43,11 +69,13 @@ flutter_app/
 
 ## 🧩 Adding Routes
 
-To add new routes to the application, update the `lib/routes/app_routes.dart` file:
+To add new routes to the application, update `lib/routes/app_routes.dart` and register the Widget builder for the new route.
+
+Example:
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:package_name/presentation/home_screen/home_screen.dart';
+// import your screen widgets here
 
 class AppRoutes {
   static const String initial = '/';
@@ -56,42 +84,18 @@ class AppRoutes {
   static Map<String, WidgetBuilder> routes = {
     initial: (context) => const SplashScreen(),
     home: (context) => const HomeScreen(),
-    // Add more routes as needed
-  }
+  };
 }
 ```
 
 ## 🎨 Theming
 
-This project includes a comprehensive theming system with both light and dark themes:
-
-```dart
-// Access the current theme
-ThemeData theme = Theme.of(context);
-
-// Use theme colors
-Color primaryColor = theme.colorScheme.primary;
-```
-
-The theme configuration includes:
-- Color schemes for light and dark modes
-- Typography styles
-- Button themes
-- Input decoration themes
-- Card and dialog themes
+Access the current theme via `Theme.of(context)` and use `theme.colorScheme` for consistent colors across light/dark modes.
 
 ## 📱 Responsive Design
 
-The app is built with responsive design using the Sizer package:
+This app uses responsive helpers (e.g., Sizer) for adapting layouts across devices.
 
-```dart
-// Example of responsive sizing
-Container(
-  width: 50.w, // 50% of screen width
-  height: 20.h, // 20% of screen height
-  child: Text('Responsive Container'),
-)
-```
 ## 📦 Deployment
 
 Build the application for production:
@@ -105,8 +109,8 @@ flutter build ios --release
 ```
 
 ## 🙏 Acknowledgments
-- Built with [Rocket.new](https://rocket.new)
-- Powered by [Flutter](https://flutter.dev) & [Dart](https://dart.dev)
+
+- Built with Flutter & Dart
 - Styled with Material Design
 
-Built with ❤️ on Rocket.new
+Built with ❤️
