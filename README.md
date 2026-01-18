@@ -109,8 +109,7 @@ flutter build ios --release
 ```
 
 ## 🙏 Acknowledgments
-
-- Built with Flutter & Dart
+- Powered by [Flutter](https://flutter.dev) & [Dart](https://dart.dev)
 - Styled with Material Design
 
-Built with ❤️
+Built with ❤️ by Debpriyo
